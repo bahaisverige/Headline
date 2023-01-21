@@ -85,7 +85,8 @@
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
-        "zip": "gulp zip"
+        "zip": "gulp zip",
+		"copy": "rsync -av --delete --exclude='.*/' --exclude='node_modules' --exclude='.gitignore' --exclude='yarn.lock' . ../informationskontoret.bahai.se/content/themes/Headline-main/"
     },
     "devDependencies": {
         "@tryghost/shared-theme-assets": "2.0.1",
